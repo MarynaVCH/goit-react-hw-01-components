@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { Name } from './Profile.styled';
 
 export default function Profile(props) {
   const {
@@ -11,8 +12,8 @@ export default function Profile(props) {
   return (
     <div class="profile">
       <div class="description">
-        <img src={avatar} alt="User avatar" class="avatar" width="200" />
-        <p class="name">{username}</p>
+        <img src={avatar} alt="User avatar" class="avatar" width="50" />
+        <Name class="name">{username}</Name>
         <p class="tag">@{tag}</p>
         <p class="location">{location}</p>
       </div>
